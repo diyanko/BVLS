@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Will have to install the following
+ *  - NAG Library
+ *  - MathNet.Numerics
+ */
+
+using System;
 using NagLibrary;
 using System.IO;
 using System.Linq;
@@ -12,8 +18,8 @@ namespace NNLS
         static void Main(string[] args)
         {
             int itype = 1;
-            int m = 1215;
-            int n = 424;
+            int m = 1215; // Number of points
+            int n = 424; // Number of lights
             int lda = m;
             double tol = 0.0;
             double[] x = new double[n];
